@@ -62,6 +62,7 @@ def main():
 
     print("\nThanks for playing!")
     print(f"Final Score — You: {player_score} | Computer: {computer_score} | Rounds: {rounds_played}")
+    print("Come Again,and beat computer .")
 
 if __name__ == "__main__":
     main()
