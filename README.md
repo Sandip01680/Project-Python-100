@@ -74,7 +74,7 @@ Perfect for those starting their Python journey. Focus on fundamentals like vari
 
 | # | Project Name | Key Concepts | Status |
 |---|--------------|--------------|--------|
-| 01 | [Hello World & Input/Output](https://github.com/Debanga-06/Project-Python-100/tree/main/Project%20-%2001) | Print, Input, Variables | ✅ |
+| 01 | [Hello World & Input/Output](./Beginner_Level/Project-01) | Print, Input, Variables | ✅ |
 | 02 | [Calculator](./Project%20-%2002) | Arithmetic Operations, Functions | ✅ |
 | 03 | [Number Guessing Game](./Project%20-%2003) | Loops, Conditionals, Random | ✅ |
 | 04 | [Rock,Paper,Scissors](./Project%20-%2004) | Game Logic, User Input, Conditionals | ✅ |
