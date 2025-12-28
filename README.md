@@ -75,20 +75,20 @@ Perfect for those starting their Python journey. Focus on fundamentals like vari
 | # | Project Name | Key Concepts | Status |
 |---|--------------|--------------|--------|
 | 01 | [Hello World & Input/Output](./Beginner_Level/Project-01) | Print, Input, Variables | ✅ |
-| 02 | [Calculator](./Project%20-%2002) | Arithmetic Operations, Functions | ✅ |
-| 03 | [Number Guessing Game](./Project%20-%2003) | Loops, Conditionals, Random | ✅ |
-| 04 | [Rock,Paper,Scissors](./Project%20-%2004) | Game Logic, User Input, Conditionals | ✅ |
-| 05 | [Odd-Even Chacker](./Project%20-%2005) | Lists, Conditionals, Functions | ✅ |
-| 06 | [Leap Year Checker](./Project%20-%2006) | Date Operations, Logic | ✅ |
-| 07 | [Palindrome Checker](./Project%20-%2007) | String Manipulation, Validation | ✅ |
-| 08 | [Password Generator](./Project%20-%2008) | Strings, Random Module, Validation | ✅ |
-| 09 | [Dice Rolling Simulator](./Project%20-%2009) | Random Module, ASCII Art, Simulation | ✅ |
-| 10 | [Unit Converter](./Project%20-%2010) | Functions, Dictionary, Input Handling | ✅ |
-| 11 | [BMI Calculator](./Project%20-%2011) | Input/Output, Functions, Health Calculations | ✅ |
-| 12 | [Prime Number Checker](./Project%20-%2012) | Algorithms, Loops, Optimization | ✅ |
-| 13 | [Fibonacci Sequence Generator](./Project%20-%2013) | Algorithms, Loops, Optimization | ✅ |
-| 14 | [Countdown Timer](./Project%20-%2014) | Time Module, Loops, User Interface | ✅ |
-| 15 | [Digital Clock](./Project%20-%2015) | Tkinter, Time Module, GUI Basics | ✅ |
+| 02 | [Calculator](./Beginner_Level/Project-02) | Arithmetic Operations, Functions | ✅ |
+| 03 | [Number Guessing Game](./Beginner_Level/Project-03) | Loops, Conditionals, Random | ✅ |
+| 04 | [Rock,Paper,Scissors](./Beginner_Level/Project-04) | Game Logic, User Input, Conditionals | ✅ |
+| 05 | [Odd-Even Chacker](./Beginner_Level/Project-05) | Lists, Conditionals, Functions | ✅ |
+| 06 | [Leap Year Checker](./Beginner_Level/Project-06) | Date Operations, Logic | ✅ |
+| 07 | [Palindrome Checker](./Beginner_Level/Project-07) | String Manipulation, Validation | ✅ |
+| 08 | [Password Generator](./Beginner_Level/Project-08) | Strings, Random Module, Validation | ✅ |
+| 09 | [Dice Rolling Simulator](./Beginner_Level/Project-09) | Random Module, ASCII Art, Simulation | ✅ |
+| 10 | [Unit Converter](./Beginner_Level/Project-10) | Functions, Dictionary, Input Handling | ✅ |
+| 11 | [BMI Calculator](./Beginner_Level/Project-11) | Input/Output, Functions, Health Calculations | ✅ |
+| 12 | [Prime Number Checker](./Beginner_Level/Project-12) | Algorithms, Loops, Optimization | ✅ |
+| 13 | [Fibonacci Sequence Generator](./Beginner_Level/Project-13) | Algorithms, Loops, Optimization | ✅ |
+| 14 | [Countdown Timer](./Beginner_Level/Project-14) | Time Module, Loops, User Interface | ✅ |
+| 15 | [Digital Clock](./Beginner_Level/Project-15) | Tkinter, Time Module, GUI Basics | ✅ |
 | 16 | [Factorial Calculator]() | Recursion, Mathematical Operations | 🚧 |
 | 17 | [To-Do List (File Based)]() | Lists, GUI , Storage | 🚧 |
 | 18 | [Mad Libs Generator]() | String Formatting, User Input, Creativity | 🚧 |
