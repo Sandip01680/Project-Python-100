@@ -92,7 +92,7 @@ Perfect for those starting their Python journey. Focus on fundamentals like vari
 | 16 | [Factorial Calculator](./Beginner_Level/Project-16) | Recursion, Mathematical Operations | ✅ |
 | 17 | [To-Do List (File Based)](./Beginner_Level/Project-17) | Lists, GUI , Storage | ✅ |
 | 18 | [Mad Libs Generator](./Beginner_Level/Project-18) | String Formatting, User Input, Creativity | ✅ |
-| 19 | [Hangman Game]() | ASCII , List , User Input, Creativity | 🚧 |
+| 19 | [Hangman Game]() | ASCII , List , User Input, Creativity | 🔄 |
 | 20 | [Word Counter]() | File Operations, Text Processing | 🚧 |
 | 21 | [QR Code Generator]() | Libraries , Image Path , Functions | 🚧 |
 | 22 | [Currency Converter]() | API Integration, JSON, Calculations | 🚧 |
@@ -113,7 +113,7 @@ Build on fundamentals with API integration, web scraping, GUI development, and d
 | # | Project Name | Key Concepts | Status |
 |---|--------------|--------------|--------|
 | 1 | [Weather App](./Intermediate_Level/Project-01) | API Integration, JSON, GUI | ✅ |
-| 2 | URL Shortener | Database, Hashing, Web Development | 🚧 |
+| 2 | URL Shortener | Database, Hashing, Web Development | 🔄 |
 | 3 | QR Code Generator | Libraries, Image Processing | 🚧 |
 | 4 | Web Scraper | BeautifulSoup, Requests, HTML Parsing | 🚧 |
 | 5 | Email Sender | SMTP, Email Libraries, Automation | 🚧 |
