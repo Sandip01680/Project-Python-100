@@ -1,372 +1,560 @@
-# 🎓 Interactive Quiz Application
+# Simple Quiz Game ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=yellow)
 
-A simple, interactive command-line quiz application built with Python that tests your knowledge on various topics including geography, programming, science, and general knowledge.
+Professional multiple-choice quiz game with categories, scoring system, streaks, time bonuses, and leaderboard tracking.
 
-![Python Version](https://img.shields.io/badge/python-3.6+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 ![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)
 ![Code Style](https://img.shields.io/badge/code%20style-PEP8-blue.svg)
 
-## 📋 Table of Contents
 
-- [Features](#-features)
-- [Demo](#-demo)
-- [Quick Start](#-quick-start)
-- [Requirements](#-requirements)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Customization Guide](#-customization-guide)
-- [Project Structure](#-project-structure)
-- [Features vs Enhancements](#-features-vs-enhancements)
-- [Code Improvements](#-code-improvements)
-- [Future Enhancements](#-future-enhancements)
-- [Community Guidelines](#-community-guidelines)
-- [Contributing](#-contributing)
-- [Acknowledgements](#-acknowledgements)
-- [License](#-license)
+## Features
 
-## ✨ Features
+### Quiz Categories
+- **General Knowledge**: Geography, history, arts (5 questions)
+- **Science**: Chemistry, biology, physics (5 questions)
+- **Technology**: Computers, internet, inventions (5 questions)
+- **Sports**: Olympics, soccer, basketball (5 questions)
+- **Mixed Mode**: Questions from all categories
 
-- **Interactive Quiz Interface**: User-friendly command-line interface with clear question formatting
-- **Multiple Choice Questions**: 10 diverse questions covering various topics
-- **Input Validation**: Robust validation to ensure only valid answers (A, B, C, D) are accepted
-- **Real-time Feedback**: Immediate feedback on correct/incorrect answers
-- **Score Calculation**: Automatic score calculation with percentage display
-- **Pass/Fail System**: Results displayed based on a 50% pass threshold
-- **Error Handling**: Graceful handling of user interruptions and errors
-- **Clean Code Structure**: Well-organized, maintainable code with proper documentation
+### Scoring System
+- **Base Points**: 10 (easy), 20 (medium), 30 (hard)
+- **Time Bonus**: Up to +10 points for quick answers
+- **Streak Bonus**: +5 points per consecutive correct answer
+- **Max Streak Bonus**: +25 points
 
-## 🎬 Demo
+### Game Features
+- **Multiple Difficulty Levels**: Easy, Medium, Hard
+- **Streak Tracking**: Consecutive correct answers
+- **Time Tracking**: Answer speed measurement
+- **Instant Feedback**: Immediate result display
+- **Leaderboard**: Top 10 high scores
+- **Performance Ratings**: 5 achievement levels
 
-### Screenshots
+## Requirements
 
-#### Quiz Start - Questions 1-2
+- Python 3.x
+- Built-in modules: `json`, `os`, `random`, `datetime`
 
-![Quiz Application - Start](screenshots/demo-screenshot-1.png)
-
-*The quiz begins with a welcome message and displays questions with multiple-choice options. Users receive immediate feedback (✅ Correct!) after each answer.*
-
-#### Quiz Completion - Final Results
-
-![Quiz Application - Results](screenshots/demo-screenshot-2.png)
-
-*After completing all 10 questions, the quiz displays the final score, percentage, and pass/fail result. In this example, the user scored 9/10 (90%) and passed the quiz.*
-
-## ⚡ Quick Start
-
-Get up and running in 3 simple steps:
+## Installation
 
 ```bash
-# 1. Clone or download the repository
-git clone <repository-url>
-cd Project-26
-
-# 2. Verify Python is installed
-python --version  # Should be 3.6 or higher
-
-# 3. Run the quiz
-python Quiz.py
+python quiz_game.py
 ```
 
-That's it! Start answering questions and test your knowledge! 🚀
+## Quick Start
 
-## 🔧 Requirements
-
-- **Python 3.6+** (Tested on Python 3.6 and above)
-- No external dependencies required (uses only Python standard library)
-
-## 📦 Installation
-
-1. **Clone or download** this repository to your local machine
-
-2. **Navigate** to the project directory:
-   ```bash
-   cd Project-26
-   ```
-
-3. **Verify Python installation**:
-   ```bash
-   python --version
-   ```
-   or
-   ```bash
-   python3 --version
-   ```
-
-## 🚀 Usage
-
-1. **Run the quiz application**:
-   ```bash
-   python Quiz.py
-   ```
-   or
-   ```bash
-   python3 Quiz.py
-   ```
-
-2. **Follow the prompts**:
-   - Read each question carefully
-   - Enter your answer (A, B, C, or D)
-   - Receive immediate feedback
-   - View your final score and result at the end
-
-### Example Output
-
+### First Game
 ```
-************************************************************
-🎓 Welcome to the Interactive Quiz!
-************************************************************
+==================================================
+            🎮 SIMPLE QUIZ GAME 🎮
+==================================================
 
-Question 1: What is the capital of India?
+Main Menu:
+  1. Play Quiz
 
-A. Delhi
-B. Mumbai
-C. Kolkata
-D. Chennai
-Enter your answer (A/B/C/D): A
-✅ Correct!
+Your choice: 1
 
-...
+📚 QUIZ CATEGORIES
+--------------------------------------------------
+  1. General Knowledge (5 questions)
+  2. Science (5 questions)
+  3. Technology (5 questions)
+  4. Sports (5 questions)
+  5. Mixed (All categories)
 
-============================================================
-🎯 Quiz Completed!
-============================================================
-Your final score: 8/10 (80.00%)
-🏆 Result: PASS
-============================================================
+Select category: 1
+How many questions? (5-10, default 5): 5
 ```
 
-## 🛠️ Customization Guide
+### Playing a Question
+```
+==================================================
+🎮 QUIZ: General Knowledge
+==================================================
+Questions: 5
+Instructions: Select the correct answer (1-4)
 
-### Adding New Questions
+----------------------------------------------------------------------
+Question 1/5
+Difficulty: EASY
+----------------------------------------------------------------------
 
-To add new questions, simply add a new dictionary to the `quiz` list in `Quiz.py`:
+What is the capital of France?
 
+  1. London
+  2. Berlin
+  3. Paris
+  4. Madrid
+
+Your answer (1-4): 3
+
+✅ CORRECT! +20 points
+   Time: 3.2s
+   Score: 20
+```
+
+### Results Screen
+```
+==================================================
+📊 QUIZ RESULTS
+==================================================
+
+🎯 Performance:
+   Total Questions:   5
+   Correct Answers:   4
+   Wrong Answers:     1
+   Accuracy:          80.0%
+
+💯 Scoring:
+   Final Score:       95
+   Best Streak:       3
+
+🏆 Rating: ⭐ GREAT! Well done!
+==================================================
+
+Enter your name for the leaderboard: Alex
+
+🎉 Congratulations! You ranked #3 on the leaderboard!
+```
+
+## Main Menu Options
+
+### 1. Play Quiz
+Start a new quiz game.
+
+**Steps:**
+1. Select category (1-5)
+2. Choose number of questions (5-10)
+3. Answer multiple-choice questions
+4. View results and save score
+
+### 2. View Categories
+Browse available quiz categories and question counts.
+
+```
+==================================================
+📚 QUIZ CATEGORIES
+==================================================
+  1. General Knowledge (5 questions)
+  2. Science (5 questions)
+  3. Technology (5 questions)
+  4. Sports (5 questions)
+  5. Mixed (All categories)
+==================================================
+```
+
+### 3. View Leaderboard
+See top 10 high scores.
+
+```
+==================================================
+🏆 LEADERBOARD - TOP 10 SCORES
+==================================================
+Rank   Name            Score      Category              Questions    Accuracy   Date
+------------------------------------------------------------------------------------------
+🥇     Alex            150        General Knowledge     10           90.0%      2024-12-28
+🥈     Sarah           145        Science               10           85.0%      2024-12-27
+🥉     Mike            135        Technology            8            87.5%      2024-12-28
+==================================================
+```
+
+### 4. View Rules & Scoring
+Complete guide to game mechanics.
+
+```
+==================================================
+📖 GAME RULES & SCORING
+==================================================
+
+🎯 How to Play:
+  1. Select a quiz category
+  2. Choose number of questions (5-10)
+  3. Answer multiple-choice questions
+  4. Get instant feedback on each answer
+  5. View final score and accuracy
+
+💯 Scoring System:
+  • Easy questions:    10 points
+  • Medium questions:  20 points
+  • Hard questions:    30 points
+
+⚡ Bonus Points:
+  • Time bonus:        +10 points (under 5 seconds)
+  • Time bonus:        +5 points (5-10 seconds)
+  • Streak bonus:      +5 points per correct in a row
+  • Max streak bonus:  +25 points
+==================================================
+```
+
+## Scoring System Explained
+
+### Base Points by Difficulty
+
+| Difficulty | Points | Example |
+|------------|--------|---------|
+| Easy | 10 | "What is H2O?" |
+| Medium | 20 | "What is the chemical symbol for gold?" |
+| Hard | 30 | "How many bones in adult human body?" |
+
+### Time Bonus
+
+Answer quickly for extra points:
+
+| Time Taken | Bonus Points |
+|------------|--------------|
+| < 5 seconds | +10 |
+| 5-10 seconds | +5 |
+| > 10 seconds | 0 |
+
+### Streak Bonus
+
+Consecutive correct answers multiply your score:
+
+| Streak Length | Bonus Points |
+|---------------|--------------|
+| 1 correct | 0 |
+| 2 in a row | +5 |
+| 3 in a row | +10 |
+| 4 in a row | +15 |
+| 5+ in a row | +25 (max) |
+
+### Score Calculation Example
+
+**Question:** "What is the capital of France?" (Easy, 10 points)
+- **Answer time:** 4 seconds
+- **Current streak:** 2 correct in a row
+
+**Calculation:**
+```
+Base points:      10
+Time bonus:       +10 (under 5 seconds)
+Streak bonus:     +10 (2 in a row × 5)
+─────────────────────
+Total:            30 points
+```
+
+## Performance Ratings
+
+Your final accuracy determines your rating:
+
+| Accuracy | Rating | Emoji | Description |
+|----------|--------|-------|-------------|
+| 90-100% | Excellent | 🌟 | Outstanding performance! |
+| 75-89% | Great | ⭐ | Well done! |
+| 60-74% | Good | ✨ | Keep practicing! |
+| 40-59% | Fair | 🔰 | Room for improvement! |
+| 0-39% | Needs Work | 📚 | Study more! |
+
+## Quiz Categories Details
+
+### General Knowledge
+- Geography (capitals, oceans)
+- History (world events, dates)
+- Arts (famous artists, works)
+- **Difficulty Mix**: Mostly easy/medium
+
+### Science
+- Chemistry (symbols, compounds)
+- Biology (anatomy, organisms)
+- Physics (speed of light, forces)
+- **Difficulty Mix**: Medium/hard focus
+
+### Technology
+- Computing (CPU, HTML)
+- Internet (WWW inventor)
+- Innovations (iPhone release)
+- **Difficulty Mix**: Easy/medium
+
+### Sports
+- Olympics (rings, events)
+- Soccer (World Cup, rules)
+- Basketball (hoop size, gameplay)
+- **Difficulty Mix**: Easy/medium/hard
+
+### Mixed Mode
+- Random questions from all categories
+- Balanced difficulty distribution
+- Maximum variety
+
+## Leaderboard System
+
+### What Gets Saved
+- **Name**: Player identifier
+- **Score**: Total points earned
+- **Category**: Quiz category played
+- **Questions**: Number of questions answered
+- **Accuracy**: Percentage correct
+- **Date**: Timestamp of achievement
+
+### Ranking Logic
+1. Sorted by **score** (highest first)
+2. Keeps **top 10** entries only
+3. Older entries dropped if score too low
+4. Ties broken by date (earlier = higher rank)
+
+### File Format
+Stored in `quiz_leaderboard.json`:
+
+```json
+[
+  {
+    "name": "Alex",
+    "score": 150,
+    "category": "General Knowledge",
+    "questions": 10,
+    "accuracy": 90.0,
+    "date": "2024-12-28 14:30:45"
+  }
+]
+```
+
+## Strategy & Tips
+
+### Maximize Your Score
+
+#### 1. Answer Quickly
+- Read question carefully but don't overthink
+- Time bonus only for <10 second answers
+- +10 points for <5 seconds is significant
+
+#### 2. Build Streaks
+- Streak bonus compounds rapidly
+- 5-answer streak = +25 points bonus
+- Focus on accuracy to maintain streaks
+
+#### 3. Choose Harder Questions
+- Hard questions worth 3× easy questions
+- Risk vs. reward: accuracy matters
+- Mixed mode balances both
+
+#### 4. Practice Categories
+- Review questions before playing
+- Learn from wrong answers
+- Replay weak categories
+
+### Study Recommendations
+
+**Before Playing:**
+- Read through all questions
+- Note difficult questions
+- Research unfamiliar topics
+
+**During Game:**
+- Stay calm and focused
+- Don't rush if unsure
+- Trust your first instinct
+
+**After Playing:**
+- Review missed questions
+- Study correct answers
+- Track improvement over time
+
+## Question Database Structure
+
+### Question Format
 ```python
 {
-    "question": "Your question here?",
-    "options": ["A. Option 1", "B. Option 2", "C. Option 3", "D. Option 4"],
-    "answer": "A"  # The correct answer (A, B, C, or D)
+    "question": "What is the capital of France?",
+    "options": ["London", "Berlin", "Paris", "Madrid"],
+    "answer": 2,  # Index of correct option (0-based)
+    "difficulty": "easy"  # "easy", "medium", or "hard"
 }
 ```
 
-**Example:**
-```python
-{"question": "What is 2 + 2?",
- "options": ["A. 3", "B. 4", "C. 5", "D. 6"],
- "answer": "B"}
-```
+### Adding Custom Questions
 
-### Changing Pass Threshold
-
-Modify the `PASS_THRESHOLD` constant at the top of `Quiz.py`:
+Edit the `QUIZ_DATABASE` dictionary:
 
 ```python
-PASS_THRESHOLD = 70  # Change from 50 to 70 (or any value 0-100)
+QUIZ_DATABASE = {
+    "Your Category": [
+        {
+            "question": "Your question here?",
+            "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+            "answer": 0,  # Correct answer index
+            "difficulty": "medium"
+        }
+    ]
+}
 ```
 
-### Customizing Welcome Message
+## Code Structure
 
-Edit the welcome message in the `run_quiz()` function:
+### Classes
 
 ```python
-print("*" * 60)
-print("🎓 Your Custom Welcome Message Here!")
-print("*" * 60)
+class QuizGame:
+    # Properties
+    leaderboard_file, leaderboard
+    current_score, total_questions
+    correct_answers, wrong_answers
+    current_streak, best_streak
+    
+    # Methods
+    load_leaderboard()          # Load from JSON
+    save_leaderboard()          # Save to JSON
+    add_to_leaderboard(...)     # Add new score
+    display_leaderboard()       # Show top 10
+    calculate_score(...)        # Compute points
+    reset_game()                # Clear stats
+    play_quiz(category, num, shuffle)  # Main game loop
+    display_results(category)   # Show final stats
 ```
 
-### Changing Answer Options
-
-To support more answer options (e.g., A-E), modify the `VALID_ANSWERS` constant:
+### Main Functions
 
 ```python
-VALID_ANSWERS = ["A", "B", "C", "D", "E"]
+display_categories()            # Show available categories
+display_rules()                 # Show game rules
+main()                          # Program entry point
 ```
 
-**Note:** Remember to update your question dictionaries to include option E.
+## Use Cases
 
-### Customizing Output Formatting
+### Educational
+- **Classroom quizzes**: Test student knowledge
+- **Study tool**: Prepare for exams
+- **Homework**: Interactive assignments
+- **Trivia nights**: Group activities
 
-You can modify the separator characters in the `run_quiz()` function:
+### Entertainment
+- **Family game night**: Competitive fun
+- **Party games**: Social activity
+- **Brain training**: Mental exercise
+- **Time killer**: Quick entertainment
 
+### Professional
+- **Training**: Employee onboarding
+- **Certification**: Practice tests
+- **Team building**: Office activities
+- **Assessments**: Knowledge evaluation
+
+## Customization Ideas
+
+### Easy Modifications
+
+#### 1. Add More Questions
 ```python
-print("=" * 60)  # Change "=" to "-", "*", "#", etc.
+QUIZ_DATABASE["Science"].append({
+    "question": "What is DNA?",
+    "options": ["Acid", "Base", "Genetic material", "Protein"],
+    "answer": 2,
+    "difficulty": "medium"
+})
 ```
 
-## 📁 Project Structure
-
-```
-Project-26/
-│
-├── Quiz.py                # Main quiz application file
-├── README.md              # Project documentation
-├── screenshots/           # Screenshots directory
-│   ├── README.md          # Screenshots guide
-│   ├── demo-screenshot-1.png  # Screenshot 1: Quiz start
-│   └── demo-screenshot-2.png  # Screenshot 2: Quiz results
-└── demo.gif              # Demo GIF (optional, root directory)
+#### 2. Adjust Scoring
+```python
+base_scores = {
+    "easy": 15,     # Changed from 10
+    "medium": 25,   # Changed from 20
+    "hard": 40      # Changed from 30
+}
 ```
 
-## 📊 Features vs Enhancements
+#### 3. Add Categories
+```python
+QUIZ_DATABASE["History"] = [
+    {
+        "question": "When did WWI begin?",
+        "options": ["1912", "1914", "1916", "1918"],
+        "answer": 1,
+        "difficulty": "medium"
+    }
+]
+```
 
-| Feature | Current Status | Future Enhancement |
-|---------|---------------|-------------------|
-| **Question Types** | ✅ Multiple Choice (A-D) | 🔄 True/False, Fill-in-the-blank |
-| **Question Count** | ✅ 10 Questions | 🔄 Configurable question count |
-| **Categories** | ❌ Not Available | 🔄 Topic-based categories |
-| **Difficulty Levels** | ❌ Not Available | 🔄 Easy, Medium, Hard levels |
-| **Timer** | ❌ Not Available | 🔄 Time limit per question |
-| **Score Tracking** | ✅ Current session only | 🔄 Score history & statistics |
-| **Question Bank** | ✅ Hardcoded in code | 🔄 JSON/CSV file support |
-| **Randomization** | ❌ Sequential order | 🔄 Random question selection |
-| **User Interface** | ✅ Command-line | 🔄 GUI (tkinter/PyQt) |
-| **Results Export** | ❌ Not Available | 🔄 Export to CSV/JSON/TXT |
-| **Multi-language** | ❌ English only | 🔄 Multi-language support |
-| **Hints** | ❌ Not Available | 🔄 Hint system for questions |
-| **Review Mode** | ❌ Not Available | 🔄 Review incorrect answers |
+### Advanced Features
 
-**Legend:**
-- ✅ = Currently Available
-- ❌ = Not Available
-- 🔄 = Planned for Future
+#### True/False Questions
+```python
+# Add boolean question type
+{
+    "question": "Is Python a compiled language?",
+    "options": ["True", "False"],
+    "answer": 1,
+    "difficulty": "medium"
+}
+```
 
-## 🔄 Code Improvements
+#### Timed Mode
+```python
+# Add time limit per question
+max_time_per_question = 30  # seconds
+```
 
-The following improvements were made to enhance code quality and maintainability:
+#### Difficulty Selection
+```python
+# Filter questions by difficulty
+def get_questions_by_difficulty(difficulty):
+    return [q for q in questions if q["difficulty"] == difficulty]
+```
 
-1. **Added Module Documentation**: Comprehensive docstrings for better code understanding
-2. **Constants Extraction**: Moved magic numbers (pass threshold, valid answers) to constants for easier maintenance
-3. **Error Handling**: Added try-except blocks for graceful error handling and user interruption support
-4. **Input Validation Enhancement**: Improved input validation with `.strip()` for whitespace handling
-5. **Main Guard**: Added `if __name__ == "__main__"` for proper script execution
-6. **Function Documentation**: Added docstrings to all functions explaining parameters and return values
-7. **Better Formatting**: Enhanced output formatting with separators for better readability
-8. **Code Organization**: Improved code structure and readability
-9. **Type Safety**: Better handling of edge cases and user interruptions
+## Performance Benchmarks
 
-## 🎯 Future Enhancements
+### Typical Scores
 
-Potential improvements for future versions:
+| Skill Level | Score Range | Accuracy |
+|-------------|-------------|----------|
+| Beginner | 0-50 | < 50% |
+| Intermediate | 50-100 | 50-75% |
+| Advanced | 100-150 | 75-90% |
+| Expert | 150+ | 90%+ |
 
-- [ ] **Question Categories**: Organize questions by topics (Geography, Programming, Science, etc.)
-- [ ] **Difficulty Levels**: Add easy, medium, and hard difficulty levels
-- [ ] **Timer Feature**: Add time limit for each question
-- [ ] **Score History**: Save and display previous quiz scores
-- [ ] **Question Bank Expansion**: Add more questions with a database or JSON file
-- [ ] **Random Question Selection**: Randomly select questions from a larger pool
-- [ ] **Multiple Quiz Modes**: Support for different quiz types (timed, practice, exam mode)
-- [ ] **GUI Version**: Create a graphical user interface using tkinter or PyQt
-- [ ] **Export Results**: Save quiz results to a file (CSV, JSON, or text)
-- [ ] **Statistics Dashboard**: Show detailed statistics (time per question, category performance)
+### Time Estimates
+- **5 questions**: 3-5 minutes
+- **10 questions**: 6-10 minutes
+- **Mixed category**: 5-8 minutes
 
-## 👥 Community Guidelines
+## Troubleshooting
 
-### Code of Conduct
+### Leaderboard Not Saving
+- Check file permissions
+- Ensure disk space available
+- Verify JSON format valid
 
-We are committed to providing a welcoming and inclusive environment for all contributors. Please follow these guidelines:
+### Questions Repeating
+- Not enough questions in category
+- Increase question pool size
+- Use mixed mode for variety
 
-- **Be Respectful**: Treat all community members with respect and kindness
-- **Be Constructive**: Provide helpful feedback and suggestions
-- **Be Open**: Welcome new ideas and different perspectives
-- **Be Professional**: Maintain a professional tone in all interactions
+### Score Seems Wrong
+- Check time bonus calculation
+- Verify streak counter
+- Review difficulty multipliers
 
-### Reporting Issues
+## Future Enhancements
 
-When reporting issues, please include:
-- **Description**: Clear description of the issue
-- **Steps to Reproduce**: Detailed steps to reproduce the problem
-- **Expected Behavior**: What you expected to happen
-- **Actual Behavior**: What actually happened
-- **Environment**: Python version, OS, etc.
+- [ ] Multiplayer mode
+- [ ] Question timer display
+- [ ] Hint system (costs points)
+- [ ] Achievements/badges
+- [ ] Question difficulty voting
+- [ ] User-submitted questions
+- [ ] Category difficulty ratings
+- [ ] Export results to PDF
+- [ ] Audio questions
+- [ ] Image-based questions
 
-### Feature Requests
+## Educational Benefits
 
-When requesting features:
-- **Use Case**: Explain why this feature would be useful
-- **Proposed Solution**: Describe how you envision the feature working
-- **Alternatives**: Mention any alternative solutions you've considered
+### Cognitive Skills
+- **Knowledge retention**: Spaced repetition
+- **Quick thinking**: Time pressure
+- **Decision making**: Multiple choices
+- **Pattern recognition**: Question types
 
-### Pull Request Guidelines
+### Learning Outcomes
+- Broad knowledge base
+- Subject mastery
+- Test-taking skills
+- Competitive motivation
 
-- **Code Quality**: Ensure your code follows PEP 8 style guidelines
-- **Documentation**: Update README.md if you add new features
-- **Testing**: Test your changes thoroughly before submitting
-- **Description**: Provide a clear description of your changes
-- **Small Commits**: Keep commits focused and atomic
+## License
 
-### Communication Channels
+Free to use and modify for educational and entertainment purposes.
 
-- **Issues**: Use GitHub Issues for bug reports and feature requests
-- **Discussions**: Use GitHub Discussions for questions and general discussion
-- **Pull Requests**: Use Pull Requests for code contributions
+## Credits
 
-## 🤝 Contributing
-
-Contributions are welcome! If you'd like to contribute:
-
-1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
-3. **Make your changes** following the code style and guidelines
-4. **Test your changes** thoroughly
-5. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
-6. **Push to the branch** (`git push origin feature/AmazingFeature`)
-7. **Open a Pull Request** with a clear description
-
-### Contribution Types
-
-We welcome various types of contributions:
-
-- 🐛 **Bug Fixes**: Fix existing issues
-- ✨ **New Features**: Add new functionality
-- 📝 **Documentation**: Improve documentation
-- 🎨 **UI/UX**: Enhance user experience
-- ⚡ **Performance**: Optimize code performance
-- 🧪 **Tests**: Add or improve tests
-- 🌐 **Translations**: Add multi-language support
-
-## 🙏 Acknowledgements
-
-We would like to thank the following:
-
-- **Python Community**: For the amazing Python programming language and its extensive standard library
-- **Project-Python-100**: For providing the inspiration and structure for this beginner-level project
-- **Open Source Contributors**: All contributors who help improve this project
-- **Educational Resources**: Various online resources that helped in learning Python fundamentals
-
-### Resources Used
-
-- [Python Official Documentation](https://docs.python.org/3/)
-- [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
-- [Real Python](https://realpython.com/) - For Python best practices
-- [GitHub Community Guidelines](https://docs.github.com/en/communities) - For community standards
-
-### Inspiration
-
-This project is part of the **Python 100 Projects** series, designed to help beginners learn Python through hands-on projects. The goal is to build practical applications while learning fundamental programming concepts.
-
-**Special Thanks** to all the learners and educators who use and improve this project! 🎉
-
-## 📝 License
-
-This project is open source and available for educational purposes.
-
-## 👤 Author
-
-**Project-Python-100 - Beginner Level**
-
-Part of the Python 100 Projects series focusing on beginner-level applications.
-
----
-
-**Note**: This is a beginner-level project designed for learning Python fundamentals including:
-- Data structures (lists, dictionaries)
-- Functions and modular programming
-- Input/output handling
-- Control flow (loops, conditionals)
-- Error handling
-- Code organization and best practices
-
----
-
-⭐ If you find this project helpful, please consider giving it a star!
+Built with educational gaming principles to make learning fun and engaging through gamification, immediate feedback, and competitive elements.
