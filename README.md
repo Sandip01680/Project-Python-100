@@ -122,7 +122,7 @@ Build on fundamentals with API integration, web scraping, GUI development, and d
 | 8 | [Flashcard App]() | GUI, Data Persistence, Study Tool | 🔄 |
 | 9 | [Password Manager]() | Encryption, Security, Database | 🔄 |
 | 10 | [Pomodoro Timer]() | GUI, Time Management, Notifications | 🔄 |
-| 11 | [RSS Feed Reader]() | XML Parsing, Web Feeds, Display | 🚧 |
+| 11 | [RSS Feed Reader](./Intermediate_Level/Project-11) | XML Parsing, Web Feeds, Display | ✅ |
 | 12 | [Image Resizer]() | PIL/Pillow, Batch Processing | 🚧 |
 | 13 | [YouTube Downloader]() | pytube, File Management | 🚧 |
 | 14 | [Snake Game]() | Pygame, Game Development | 🚧 |
