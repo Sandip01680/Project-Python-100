@@ -290,10 +290,10 @@ This project exists thanks to all the amazing people who contribute! 🎉
       <span title="Maintenance">🔧 Maintainer</span>
     </td>
     <td align="center">
-      <a href="https://github.com/Debanga-06">
-        <img src="https://github.com/Debanga-06.png" width="100px;" alt="Debanga"/>
+      <a href="https://github.com/Jiban0507">
+        <img src="https://github.com/Jiban0507.png" width="100px;" alt="Jiban"/>
         <br />
-        <sub><b>Debanga</b></sub>
+        <sub><b>Jiban</b></sub>
       </a>
       <br />
       <span title="Controller">🕹️ Repo Controller</span>
@@ -314,12 +314,13 @@ This project exists thanks to all the amazing people who contribute! 🎉
 | Contributor | Projects Added | Bug Fixes | Documentation | Code Reviews | Total Contributions |
 |-------------|----------------|-----------|---------------|--------------|---------------------|
 | [@Debanga-06](https://github.com/Debanga-06) | 24 | - | ✅ | ✅ | 25+ |
-| *Your name here* | - | - | - | - | - |
+| [@Jiban0507](https://github.com/Jiban0507) | 20 | - | - | - | 22+ |
 
 ### 🎖️ Hall of Fame
 
 #### 🥇 Gold Contributors (10+ Projects)
-- **[@Debanga-06](https://github.com/Debanga-06)** - 34 projects completed across all levels
+- **[@Debanga-06](https://github.com/Debanga-06)** - 24 projects completed across all levels
+- **[@Jiban0507](https://github.com/Jiban0507)** - 20 projects completed across all levels
 
 #### 🥈 Silver Contributors (5-9 Projects)
 - *Be the first silver contributor!*
