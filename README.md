@@ -125,10 +125,10 @@ Build on fundamentals with API integration, web scraping, GUI development, and d
 | 11 | [RSS Feed Reader](./Intermediate_Level/Project-11) | XML Parsing, Web Feeds, Display | ✅ |
 | 12 | [Image Resizer](./Intermediate_Level/Project-12) | PIL/Pillow, Batch Processing | ✅ |
 | 13 | [YouTube Downloader](./Intermediate_Level/Project-13) | pytube, File Management | ✅ |
-| 14 | [Snake Game]() | Pygame, Game Development | 🔄 |
-| 15 | [Chat Application]() | Sockets, Networking, Threading | 🔄 |
+| 14 | [Snake Game](./Intermediate_Level/Project-14) | Pygame, Game Development | ✅ |
+| 15 | [Chat Application](./Intermediate_Level/Project-15) | Sockets, Networking, Threading | ✅ |
 | 16 | [Typing Speed Test](./Intermediate_Level/Project-16) | GUI, Timing, Statistics | ✅ |
-| 17 | [Sudoku Solver]() | Backtracking Algorithm, Recursion | 🔄 |
+| 17 | [Sudoku Solver](./Intermediate_Level/Project-17) | Backtracking Algorithm, Recursion | ✅ |
 | 18 | [Alarm Clock]() | Time Module, Audio, Threading | 🔄 |
 | 19 | [PDF Merger](./Intermediate_Level/Project-19) | PyPDF2, File Operations | ✅ |
 | 20 | [Screen Recorder]() | Screen Capture, Video Processing | 🔄 |
